@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Four Card Feature Section</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+  color: #4c4e61;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+.header h1 span {
+  font-weight: 600;
+}
+
+.header p {
+  max-width: 500px;
+  margin: 0 auto 40px;
+  font-size: 15px;
+  color: #a3a5ae;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  position: relative;
+  max-width: 300px;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 13px;
+  color: #a3a5ae;
+}
+
+.card img {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.supervisor {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.team-builder {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+@media (max-width: 900px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .middle {
+    flex-direction: column;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+  <main class="container">
+    <header class="header">
+      <h1>
+        Reliable, efficient delivery <br />
+        <span>Powered by Technology</span>
+      </h1>
+      <p>
+        Our Artificial Intelligence powered tools use millions of project data
+        points to ensure that your project is successful
+      </p>
+    </header>
+
+    <section class="cards">
+      
+      <div class="card supervisor">
+        <h2>Supervisor</h2>
+        <p>Monitors activity to identify project roadblocks</p>
+        <img src="./images/icon-supervisor.svg" alt="Supervisor" />
+      </div>
+
+      <div class="middle">
+        <div class="card team-builder">
+          <h2>Team Builder</h2>
+          <p>Scans our talent network to create the optimal team for your project</p>
+          <img src="./images/icon-team-builder.svg" alt="Team Builder" />
+        </div>
+
+        <div class="card karma">
+          <h2>Karma</h2>
+          <p>Regularly evaluates our talent to ensure quality</p>
+          <img src="./images/icon-karma.svg" alt="Karma" />
+        </div>
+      </div>
+
+      <div class="card calculator">
+        <h2>Calculator</h2>
+        <p>Uses data from past projects to provide better delivery estimates</p>
+        <img src="./images/icon-calculator.svg" alt="Calculator" />
+      </div>
+
+    </section>
+  </main>
+
+</body>
+</html>
